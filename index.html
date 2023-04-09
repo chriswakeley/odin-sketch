@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
+
 <body>
     <div class="header dark-background">
         <h1>Odin-Sketch</h1>
@@ -16,10 +18,24 @@
         <div class="canvas-container">
 
         </div>
-        <button class="reset-button dark-background">New Grid</button>
+        <div class="button-container">
+            <label class="switch soft-brush">
+                <input type="checkbox">                
+                <span class="slider round"></span>
+                <span class="slider-text">Soft Brush</span>                
+            </label>
+            <button class="reset-button dark-background">New Grid</button>
+            <label class="switch rainbow-brush">
+                <input type="checkbox">
+                <span class="slider round"></span>
+                <span class="slider-text">Rainbow</span>    
+            </label>
+        </div>
+
     </div>
     <div class="footer dark-background">
         <p>Chris Wakeley 2023</p>
     </div>
 </body>
+
 </html>
