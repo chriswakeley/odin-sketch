@@ -47,7 +47,31 @@ h1 {
 }
 
 .canvas-container{
+    height: 600px;
+    width:600px;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
+    border-style:solid;
+}
+
+.grid-cell {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border-style:solid;
     flex: 1;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.grid-row{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border-style:none;
+    flex: 1;
+    display: flex;
 }
 
 .footer {
