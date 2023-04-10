@@ -58,4 +58,18 @@ function makeGrid(gridSize) {
     canvasContainer.replaceChildren(...gridRows);
 }
 
+function handleNewGrid(){
+    let newGridSize = prompt("Please enter a new grid size, 1-100");
+    if(newGridSize === null){
+        alert("New Grid Cancelled");
+    }
+    else if(+newGridSize < 1 || +newGridSize > 100 || +newGridSize%1 !== 0){
+        alert("New Grid Cancelled, not a valid grid size, integer 1-100");
+    }
+    else {
+        makeGrid(+newGridSize);
+    }
+}
+
+document.querySelector(".reset-button").addEventListener("click", handleNewGrid);
 makeGrid(DEFAULT_GRID_SIZE);
