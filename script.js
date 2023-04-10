@@ -44,7 +44,7 @@ function updateGridCell(event) {
         //Blend color with random rainbow color
         if (document.querySelector(".rainbow-brush input").checked) {
             for (let i = 0; i < 3; i++) {
-                parts[i] = Math.min(255, Math.max(0, parseFloat(parts[i]) + colorToAdd[i] * ALPHA_INCREASE));
+                parts[i] = Math.min(255, Math.max(0, parseFloat(parts[i]) + colorToAdd[i] * 2 * ALPHA_INCREASE));
             }
         }
         else {
